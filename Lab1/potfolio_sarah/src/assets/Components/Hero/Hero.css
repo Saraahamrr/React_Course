@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.profilePic {
+  margin-top: 150px;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.profilePic:hover {
+  scale: 1.05;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 70px;
+  font-weight: 40px;
+}
+.hero p {
+  text-align: center;
+  width: 50%;
+  font-size: 40px;
+  font-weight: 20px;
+}
+
+.contactMe {
+  padding: 25px 45px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+  background: transparent;
+  color: white;
+}
+
+.contactMe:hover {
+  scale: 1.05;
+  border: 2px solid blue;
+}

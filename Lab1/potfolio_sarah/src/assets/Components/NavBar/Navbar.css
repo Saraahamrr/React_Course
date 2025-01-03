@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 180px;
+  font-family: "outfit";
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav_menu a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav_menu a:hover {
+  color: blue;
+}

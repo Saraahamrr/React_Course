@@ -1,0 +1,33 @@
+.myWork {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.PortfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 50px 80px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.showMore {
+  padding: 25px 45px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.showMore:hover {
+  scale: 1.05;
+  border: 2px solid blue;
+}

@@ -1,0 +1,41 @@
+.aboutMeTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin: 80px 20px;
+}
+.aboutSections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin: 50px 80px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.right p {
+  font-size: 20px;
+  font-weight: 50px;
+}
+
+.myResume {
+  padding: 25px 45px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.myResume:hover {
+  scale: 1.05;
+  border: 2px solid blue;
+}
