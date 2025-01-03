@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 function UsersCard(props) {
-  console.log(props);
+  //console.log(props);
   return (
     <>
       <div className="card">

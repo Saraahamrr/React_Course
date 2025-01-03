@@ -17,7 +17,7 @@ function MainContent() {
   return (
     <>
       <h1>Users List</h1>
-      <Form.Label htmlFor="inputPassword5"></Form.Label>
+      <Form.Label htmlFor="inputEmail"></Form.Label>
       <br />
       <Form.Control
         type="Email"
