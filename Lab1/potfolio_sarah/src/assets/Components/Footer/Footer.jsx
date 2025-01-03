@@ -7,10 +7,10 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
-      <footer id="contact" class="footer">
-        <div class="footer-content">
+      <footer id="contact" className="footer">
+        <div className="footer-content">
           <p>@2025 Sarah Amr. All rights reserved.</p>
-          <div class="social-icons">
+          <div className="social-icons">
             <a
               href="https://www.facebook.com/sara.amr.3532507"
               target="blank"
