@@ -1,0 +1,10 @@
+.custom-navbar {
+  background-color: black; /* Change the background to black */
+  color: white; /* Make text white */
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand,
+.custom-navbar .dropdown-item {
+  color: white !important;
+}
