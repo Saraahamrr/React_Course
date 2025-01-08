@@ -12,14 +12,6 @@ function SearchBar() {
     setSearch("");
   };
 
-  //   const [movies, setMovies] = useState([]);
-  //     const getMovies = async () => {
-  //         const response = await fetch(
-  //         `https://api.themoviedb.org/3/search/movie?api_key=6f4d7e8d3b6f2d6f6b3c1e6a9c5c1b7e&language=en-US&query=${search}&page=1&include_adult=false`
-  //         );
-  //         const data = await response.json();
-  //         setMovies(data.results);
-  //     };
   return (
     <>
       <div className="container my-5">

@@ -3,13 +3,13 @@ import "bootstrap/dist/js/bootstrap.js";
 import "bootswatch/dist/darkly/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router";
-import ErrorPage from "./assets/pages/ErrorPage";
-import Header from "./assets/Components/Header/Header";
-import SearchBar from "./assets/Components/SearchBar/SearchBar";
-import AboutUs from "./assets/pages/AboutUs";
-import MoviesContainer from "./assets/Components/MoviesContainer/MoviesContainer";
-import MovieDetails from "./assets/Components/MovieDetails/MovieDetails";
-
+import ErrorPage from "./pages/ErrorPage";
+import Header from "./Components/Header/Header";
+import SearchBar from "./Components/SearchBar/SearchBar";
+import AboutUs from "./pages/AboutUs";
+import MoviesContainer from "./Components/MoviesContainer/MoviesContainer";
+import MovieDetails from "./pages/MovieDetails";
+import WishList from "./pages/WishList";
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
             <Route path="/" element={<MoviesContainer />} />
             <Route path="/movie/:id" element={<MovieDetails />} />
             <Route path="/About" element={<AboutUs />} />
+            <Route path="/wishlist" element={<WishList />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>
