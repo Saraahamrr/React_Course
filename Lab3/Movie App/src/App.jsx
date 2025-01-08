@@ -10,20 +10,24 @@ import AboutUs from "./pages/AboutUs";
 import MoviesContainer from "./Components/MoviesContainer/MoviesContainer";
 import MovieDetails from "./pages/MovieDetails";
 import WishList from "./pages/WishList";
+import { useSelector } from "react-redux";
 function App() {
+  const LanguageChanger = useSelector((state) => state.language.lang);
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <SearchBar />
-        <div className="container my-5">
-          <Routes>
-            <Route path="/" element={<MoviesContainer />} />
-            <Route path="/movie/:id" element={<MovieDetails />} />
-            <Route path="/About" element={<AboutUs />} />
-            <Route path="/wishlist" element={<WishList />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
+        <div dir={LanguageChanger === "ar" ? "rtl" : "ltr"}>
+          <Header />
+          <SearchBar />
+          <div className="container my-5">
+            <Routes>
+              <Route path="/" element={<MoviesContainer />} />
+              <Route path="/movie/:id" element={<MovieDetails />} />
+              <Route path="/About" element={<AboutUs />} />
+              <Route path="/watchlist" element={<WishList />} />
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
     </>

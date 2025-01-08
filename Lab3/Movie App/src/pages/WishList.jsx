@@ -4,7 +4,7 @@ function WishList() {
   return (
     <>
       <div className="container my-5">
-        <h1>WishList</h1>
+        <h1>Watch List</h1>
         <p>WishList page content</p>
       </div>
     </>

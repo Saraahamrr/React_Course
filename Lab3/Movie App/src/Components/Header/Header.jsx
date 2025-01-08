@@ -3,12 +3,24 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router";
 import { useSelector } from "react-redux";
+import { changeLanguage } from "../../store/slices/Language";
 import { useDispatch } from "react-redux";
-import { increaseCounter } from "../../store/slices/CountWishList";
+import { useState } from "react";
 
 function Header() {
   const wishlistValue = useSelector((state) => state.counter.value);
+  const [lang, setLang] = useState();
   const dispatch = useDispatch();
+
+  const handleLanguage = (e) => {
+    if (e.target.value === "ar") {
+      dispatch(changeLanguage("ar"));
+      setLang("ar");
+    } else {
+      dispatch(changeLanguage("en"));
+      setLang("en");
+    }
+  };
 
   return (
     <>
@@ -36,8 +48,8 @@ function Header() {
                 <NavLink className="nav-link" to="/about">
                   About Us
                 </NavLink>
-                <NavLink className="nav-link" to="/wishlist">
-                  WishList
+                <NavLink className="nav-link" to="/watchlist">
+                  WatchList
                 </NavLink>
               </div>
               <div className="navbar-nav">
@@ -45,9 +57,13 @@ function Header() {
                   <FontAwesomeIcon icon={faHeart} />
                   <span> {wishlistValue}</span>
                 </div>
-                <select className="nav-link " name="language">
-                  <option>en</option>
-                  <option>ar</option>
+                <select
+                  className="nav-link "
+                  name="language"
+                  onClick={handleLanguage}
+                >
+                  <option value="en">en</option>
+                  <option value="ar">ar</option>
                 </select>
               </div>
             </div>
