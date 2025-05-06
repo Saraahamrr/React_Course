@@ -1,8 +1,19 @@
-# React + Vite
+# 🎬 React Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive movie app built with **React** and **Vite**, allowing users to browse and search for movies using an external API.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
+
+✅ Browse popular movies  
+✅ Search for specific movies  
+✅ View movie details including title, poster, rating, and description  
+✅ Responsive design for all devices  
+✅ Fast development with Vite + React
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite
+- **Styling:** CSS / Tailwind CSS / Bootstrap (whichever you're using)
+- **API:** [The Movie Database (TMDb)](https://www.themoviedb.org/) API or any other API you're using
+- **Tools:** Axios or Fetch API, React Hooks
